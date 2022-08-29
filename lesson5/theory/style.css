@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/*  
+    css units
+    - em - размер относительно контейнера
+    - rem - размер шрифта в руте(от дефолтного значения)
+    - px 
+    - % - размер относительный позиции(относительно body или parent контейнера)
+    - vh - высота (игнорирует всех родителей)
+    - vw - ширина (игнорирует всех родителей)
+*/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+.parent, 
+.child,
+.ch-2-sub1,
+.ch-2-sub2 {
+    position: relative;
+    border: solid 2px black;
+    padding: 30px;
+    margin: 100px;
+}
+
+.child {
+    height: 90vh;
+}
+
+.ch-2 {
+    font-size: 2rem;
+}
+
+.ch-2-sub1 {
+    font-size: 0.1em;
+}
