@@ -1,0 +1,64 @@
+
+/* POSITION */
+
+body, html {
+    margin: 0;
+}
+
+
+.parent {
+    margin: 50px;
+    border: solid 2px black;
+    background-color: blueviolet;
+    width: 70vw;
+    height: 40vh;
+    padding: 10px;
+    position: relative;
+}
+
+.child {
+    border: solid 2px black;
+    height: 10vh;
+}
+
+.ch1 {
+    background-color: red;
+    position: sticky;
+}
+
+.ch2 {
+    background-color: yellow;
+}
+
+.ch3 {
+    background-color: green;
+}
+
+.displays {
+    position: relative;
+    border: solid 2px #000;
+    width: 60vw;
+    height: 50vh;
+    margin: 50px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.block {
+    border: solid 2px #000;
+    margin: 5px;
+    background-color: aqua;
+    height: 50px;
+}
+
+span {
+    height: 50px;
+    width: 50px;
+    background-color: coral;
+    font-size:xx-large; 
+}
+
+
