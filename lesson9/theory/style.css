@@ -1,0 +1,19 @@
+.grid_container {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    background-color: lightgrey;
+    border: solid 2px #000;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-auto-rows: minmax(200px, 240px);
+    width: 60%;
+    transform: translate(-50%) scale(1.2);
+    
+    grid-gap: 15px;
+}
+
+.grid_container-item {
+    background-color: lightgreen;
+    border: solid 2px #000;
+}
