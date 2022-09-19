@@ -1,0 +1,36 @@
+:root {
+    --main-background: red;
+    --main-text-color: #464646;
+    --div-background: yellow;
+    --div-padding: 12px;
+    --div-margin: 15px;
+}
+
+main {
+    background-color: var(--main-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+div {
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    color: var(--main-text-color);
+    --second-div-background: green;
+}
+
+.one {
+    background-color: var(--div-background);
+}
+
+.two {
+    background-color: var(--second-div-background, black);
+}
+
+.three {
+    background-color: var(--second-div-background);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Variables</title>
+</head>
+<body>
+    <main>
+        <div class="one">
+            DIV One
+        </div>
+        <div class="two">
+            DIV Two
+        </div>
+        <div class="three">
+            DIV Three
+        </div>
+        <button id="dark">
+            Dark
+        </button>
+        <button id="light">
+            Light
+        </button>
+    </main>
+    <script>
+        const styles = window.getComputedStyle(document.documentElement);
+        
+        document.getElementById('light').addEventListener('click',() => {
+            document.documentElement.style.setProperty('--main-background', '#fff')
+        });
+
+        document.getElementById('dark').addEventListener('click',() => {
+            document.documentElement.style.setProperty('--main-background', '#333')
+        });
+
+    </script>
+</body>
+</html>
+
+<!--
+    HOMEWORK:
+
+    1. Use CSS variables in your landing project
+    2. 
+-->

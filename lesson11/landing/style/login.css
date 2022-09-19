@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+:root {
+    --basic-background-color: #f77f00;
+    --basic-text-color: #003049;
+    --basic-text-align: center;
+    --basic-padding: 30px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url(../img/sunset.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box {
+    width: 500px;
+    padding: var(--basic-padding);
+    background-color: var(--basic-background-color);
+    text-align: var(--basic-text-align);
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-item {
+    text-align: var(--basic-text-align);
+    margin: 10px;
+    width: 60%;
+    height: 35px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+}
+
+h1 {
+    color:var(--basic-text-color);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+footer {
+    margin-top: 20%;
+    background-color: var(--basic-background-color);
+    color: var(--basic-text-color);
+    text-align: var(--basic-text-align);
+    padding: var(--basic-padding);
+}
+
