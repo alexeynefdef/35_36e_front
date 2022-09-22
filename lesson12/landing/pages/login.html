@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <form class="box">
+            <h1 class="form-item">Login</h1>
+            <input class="form-item" type="text" placeholder="username" id="username">
+            <input class="form-item" type="password" placeholder="password" id="password"> 
+            <button class="form-item submit" id="submit" type="button">Login</button>
+        </form>
+        <footer>
+            <div class="copy">
+                &copy; 35-36e Telran
+                <br>
+                Berlin 2022
+            </div>
+        </footer>
+        <script>
+            const submit = document.querySelector('#submit');
+            
+            submit.addEventListener('click', () => {
+                let username = document.getElementById('username').value;
+                let password = document.getElementById('password').value;
+
+                const admin_user = "admin"; 
+                const admin_password = "admin";
+
+                if (username === admin_user && password === admin_password) {
+                    window.open('../landing.html', '_self');
+                } else {
+                    alert("Incorrect username or password");
+                }
+            });
+
+        </script>
+    </main>
+</body>
+</html>

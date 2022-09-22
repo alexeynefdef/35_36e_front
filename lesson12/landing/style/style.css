@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.nav_top {
+    position: fixed;
+    background-color: #c08552;
+    width: 100%;
+    height: 5em;
+    z-index: 1;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    background-image: url("../img/cafe.jpg");
+    height: 60em;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav_top-list-item {
+    display: inline-block;
+    position: relative;
+    width: 5em;
+    height: 5em;
+}
+
+.nav_top-list-item:hover,
+.nav_top-list-item:active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav_top-list-item-link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #f3e9dc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: content-box;
+}
+
+.open_time {
+    position: absolute;
+    bottom: 0;
+    padding: 1em 2em;
+    background-color: rgba(243, 233, 220, 0.6);
+}
+
+section {
+    position: relative;
+    text-align: center;
+    width: 80em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section>img {
+    width: 60%;
+    height: 100%;
+}
+
+footer {
+    background-color: #c08552;
+    color: #FFF;
+    text-align: center;
+    padding: 30px;
+}
+
+.nav_bottom-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.nav_bottom-list>li {
+    margin: 5px;
+}
+
+form input {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+  }
+
+.findus {
+    position: relative;
+    width: 100%;
+    background-image: url("../img/cafe_street.jpg");
+    height: 60em;
+    background-size: cover;
+    background-position: center;   
+}
+
+.kontakt {  
+    width: 48rem;  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(243, 233, 220, 0.6);
+}
+
+.kontakt_container {
+    /* border: 5px #f3e9dc solid; */
+    display: flex;
+    flex-direction: column;
+}
+
+.kontakt_item>* {
+    font-size: 1.3rem;
+    border: none;
+}
+
+.kontakt_item>input {
+    text-align: center;
+    min-height: 50px;
+}
+
+.kontakt_item>textarea {
+    min-height: 120px;
+}
+
+.kontakt_item>button {
+    background-color: #c08552;
+    padding: 10px;
+    min-width: 170px;
+    cursor: pointer;
+    color: #FFF;
+}
+
+textarea::placeholder {
+    font-family: inherit;
+}
+
+.kontakt_item>button:hover,
+.kontakt_item>input:hover,
+.kontakt_item>textarea:hover,
+.kontakt_item>input:focus,
+.kontakt_item>textarea:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.02);
+    transition: transform 0.1s ease-out;
+    color: #000;
+    box-shadow: #c08552 0 0 5px 5px;
+}
+
+.kontakt_item {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.kontakt_item_1 {    
+    width: 100%;
+    margin-top: 20px;              
+}
+
+.kontakt_item_4 {
+    width: 100%;
+}
+
+.kontakt_item_2, .kontakt_item_3 {
+    width: 47%;
+}
+
+.kontakt_item_2, .kontakt_item_6 {
+    float: left;
+}
+.kontakt_item_3, .kontakt_item_5 {
+    float: right;
+}
+
+.menu_heading {
+    font-size: 6rem;
+}
+
+.menu {
+    background-color: #c08552;
+}
+
+.menu_flexbox {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu_flexbox-item {
+    width: 400px;
+    margin: 30px 50px;
+}
+
+.menu_flexbox-item-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dish {
+    text-align: left;
+}
+
+.dish>* {
+    margin: 0;
+}
+
+@media only screen and (max-width: 500px) {
+
+    header {
+        background-image: url('../img/cafe-mobile.jpg');
+    }
+
+    .nav_top {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9rem;
+    }
+
+    .about {
+        width: auto;
+    }
+
+    .about>img {
+        content: url('../img/coffee-mobile.jpg');
+        width: 100%;
+    }
+    
+    .menu,
+    .kontakt,
+    .kontakt_item>* {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .kontakt_item_2,
+    .kontakt_item_5 {
+        margin-bottom: 20px;
+    }
+
+    .findus {
+        background-image: url('../img/street-mobile.jpg');
+    }
+
+    .menu_heading {
+        font-size: 4rem;
+    }
+
+}
